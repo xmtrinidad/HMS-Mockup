@@ -13,10 +13,20 @@
   </mat-sidenav>
 
   <mat-sidenav-content>
+
     <nav class="Nav container mat-elevation-z3">
       <button mat-icon-button mat-button (click)="sidenav.open()">
         <mat-icon aria-label="Example icon-button with a heart icon">menu</mat-icon>
       </button>
     </nav>
+
+    <main class="container">
+
+      <app-overview-section></app-overview-section>
+
+    </main>
+
+
+
   </mat-sidenav-content>
 </mat-sidenav-container>

@@ -23,3 +23,7 @@ mat-sidenav-content {
   display: flex;
   align-items: center;
 }
+
+app-overview-section {
+  margin: 20px 0;
+}
