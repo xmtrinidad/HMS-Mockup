@@ -2,13 +2,19 @@
   display: block;
 }
 
-.Overview-card {
+.Overview-cards {
+  display: grid;
+  grid-gap: 20px;
+}
+
+.Overview-cards__card {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 16px;
-  max-width: 215px;
   margin: auto;
+  max-width: 200px;
+  width: 100%;
 }
 
 mat-card-title {
@@ -18,4 +24,16 @@ mat-card-title {
 mat-card-subtitle {
   margin: 0 0 10px 0;
   
+}
+
+@media (min-width: 576px) {
+  .Overview-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 768px) {
+  .Overview-cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
