@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 interface OverviewCard {
   cardNum: number;
   cardTitle: string;
-  icon: string;
+  icon: {name: string, color: string};
 }
 
 @Component({
@@ -14,15 +14,15 @@ interface OverviewCard {
 export class OverviewSectionComponent implements OnInit {
 
   cards: OverviewCard[] = [
-    {cardNum: 63, cardTitle: 'Doctors', icon: 'home'},
-    {cardNum: 340, cardTitle: 'Nurse', icon: 'accessibility'},
-    {cardNum: 460, cardTitle: 'Patient', icon: 'favorite'},
-    {cardNum: 60, cardTitle: 'Pharmacist', icon: 'face'},
-    {cardNum: 30, cardTitle: 'Lab', icon: 'business'},
-    {cardNum: 40, cardTitle: 'Accountants', icon: 'money'},
-    {cardNum: 2601, cardTitle: 'Operation', icon: 'people'},
-    {cardNum: 2601, cardTitle: 'Birth Reports', icon: 'note'},
-    {cardNum: 2601, cardTitle: 'Death Reports', icon: 'warning'},
+    {cardNum: 63, cardTitle: 'Doctors', icon: {name: 'home', color: 'blue'}},
+    {cardNum: 340, cardTitle: 'Nurse', icon: {name: 'accessibility', color: 'green'}},
+    {cardNum: 460, cardTitle: 'Patient', icon: {name: 'favorite', color: 'red'}},
+    {cardNum: 60, cardTitle: 'Pharmacist', icon: {name: 'face', color: 'pink'}},
+    {cardNum: 30, cardTitle: 'Lab', icon: {name: 'business', color: 'lightgreen'}},
+    {cardNum: 40, cardTitle: 'Accountants', icon: {name: 'money', color: 'purple'}},
+    {cardNum: 2601, cardTitle: 'Operation', icon: {name: 'people', color: 'lightblue'}},
+    {cardNum: 2601, cardTitle: 'Birth Reports', icon: {name: 'note', color: 'orange'}},
+    {cardNum: 2601, cardTitle: 'Death Reports', icon: {name: 'warning', color: 'indigo'}},
   ];
 
   constructor() { }
