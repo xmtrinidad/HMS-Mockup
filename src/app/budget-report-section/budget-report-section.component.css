@@ -1,0 +1,36 @@
+mat-card-title {
+  font-size: 1.2rem;
+}
+
+mat-card-content {
+  position: relative;
+}
+
+.Budget-report__circle-graph {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  border-radius: 100%;
+  border: 7px solid #edecfe;
+}
+
+.Budget-report__circle-graph--revenue {
+  display: flex;
+  flex-direction: column;
+  font-size: .75rem;
+  position: absolute;
+}
+
+.Budget-report__circle-graph--revenue span:first-child {
+  font-weight: 500;
+}
+
+.Budget-report__circle-graph--revenue-spent {
+  top: 0;
+  left: 30px;
+}
+
+.Budget-report__circle-graph--revenue-received {
+  bottom: 0;
+  right: 30px;
+}

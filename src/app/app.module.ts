@@ -6,11 +6,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import {MatButtonModule, MatIconModule, MatSidenavModule, MatCardModule} from '@angular/material';
 import { OverviewSectionComponent } from './overview-section/overview-section.component';
+import { BudgetReportSectionComponent } from './budget-report-section/budget-report-section.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    OverviewSectionComponent
+    OverviewSectionComponent,
+    BudgetReportSectionComponent
   ],
   imports: [
     BrowserModule,
